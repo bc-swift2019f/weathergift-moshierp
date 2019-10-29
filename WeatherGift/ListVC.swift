@@ -101,6 +101,7 @@ extension ListVC: UITableViewDelegate, UITableViewDataSource {
         let longitude = place.coordinate.longitude
         let latitude = place.coordinate.latitude
         newWeatherLocation.coordinates = "\(latitude),\(longitude)"
+        let newWeatherLocation = WeatherLocation(name: <#T##String#>, coordinates: <#T##String#>)
         print(newWeatherLocation.coordinates)
         locationsArray.append(newWeatherLocation)
         tableView.insertRows(at: [newIndexPath], with: .automatic)
